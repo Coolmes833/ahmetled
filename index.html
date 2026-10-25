@@ -80,13 +80,11 @@ h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.1;text
 .hero h1 span{color:var(--gold-2);font-style:italic}
 .hero p{font-size:1.12rem;color:rgba(255,255,255,.8);max-width:52ch}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.hero-art{position:relative;padding:12px 0}
-.hero-art svg{width:100%;height:auto;filter:drop-shadow(0 30px 40px rgba(0,0,0,.35))}
-.chip{position:absolute;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(8px);border-radius:14px;padding:10px 14px;font-size:.86rem;font-weight:800;color:#fff;line-height:1.2}
+.hero-art{padding:12px 0;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.hero-art svg{width:100%;height:auto;order:-1;margin-bottom:6px;filter:drop-shadow(0 30px 40px rgba(0,0,0,.35))}
+.chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:10px 14px;font-size:.86rem;font-weight:800;color:#fff;line-height:1.2}
 .chip small{display:block;font-weight:500;color:rgba(255,255,255,.65);font-size:.72rem;margin-top:3px}
-.chip-1{top:10%;left:-3%}
-.chip-2{bottom:12%;right:-2%}
-@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;padding:56px 0 48px}.chip-1{left:0}.chip-2{right:0}}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;padding:56px 0 48px}}
 
 .trust{background:var(--navy-2);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
 .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:22px 0}
